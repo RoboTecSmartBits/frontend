@@ -7,7 +7,6 @@ import UpdateProfile from '../../components/users/updatedata';
 const Profile = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Profile Screen</Text>
             <UpdateProfile />
         </View>
     );

@@ -2,12 +2,14 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import UserData from '../../components/users/userdata';
+import ParkinsonTracker from "@/components/parkinson/tracker";
 
 const Home = () => {
     return (
         <View>
-            <Text>Home Screen</Text>
+
             <UserData />
+            <ParkinsonTracker></ParkinsonTracker>
         </View>
     );
 };

@@ -23,6 +23,7 @@ export default function Login({ onLogin }: { onLogin: (data: any) => void }) {
             console.log('Response:', data);
             if (response.ok && data.token) {
                 await AsyncStorage.setItem('userToken', data.token);
+                await AsyncStorage.setItem('userId', data.user.id);
                 onLogin(data);
             } else {
                 Alert.alert('Login failed', data.message || 'Unknown error');

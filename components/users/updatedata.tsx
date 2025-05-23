@@ -65,6 +65,7 @@ const UpdateProfile = () => {
             if (password.trim() !== '') {
                 updateData.password = password;
             }
+            console.log(updateData)
             console.log('Update Data:', updateData);
             const response = await fetch(`${BACKEND_URL}/users/profile`, {
                 method: 'PUT',

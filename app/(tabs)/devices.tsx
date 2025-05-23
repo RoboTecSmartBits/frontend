@@ -1,10 +1,12 @@
-// app/(tabs)/settings.tsx
+// app/(tabs)/devices.tsx
 import { View, Text, StyleSheet } from 'react-native';
+import DevicesList from '@/components/devices/deviceslist';
 
-export default function Settings() {
+export default function Devices() {
     return (
         <View style={styles.container}>
-            <Text>Settings Screen</Text>
+
+            <DevicesList />
         </View>
     );
 }
